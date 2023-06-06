@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+  <title>Password Counter</title>
+</head>
+<body>
+   <div class="container">
+    <h1>Password Counter</h1>
+
+    <form id="passwordForm">
+      <label for="startInput">Start:</label>
+      <input type="number" id="startInput" value="184759" min="0" max="999999" required>
+      <br>
+      <label for="endInput">End:</label>
+      <input type="number" id="endInput" value="856920" min="0" max="999999" required>
+      <br>
+      <button type="submit">Count Passwords</button>
+    </form>
+
+    <div id="resultContainerPart1" class="result"></div>
+    <div id="resultContainerPart2" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
