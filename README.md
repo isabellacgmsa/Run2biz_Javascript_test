@@ -13,10 +13,11 @@ Adds an extra rule: There must be at least one group of exactly two adjacent dig
 Example: 334478 is valid (all repeated digits are exactly two digits long).
 
 ### Usage
-Open the index.html file in a web browser.
-Enter the desired start and end values in the form.
-Click the "Count Passwords" button.
-The number of valid passwords (Part 1 and Part 2) will be displayed below the form.
+1. Clone this repository or download the source code.
+2. Open the index.html file in a web browser.
+3. Enter the desired start and end values in the form.
+4. Click the "Count Passwords" button.
+5. The number of valid passwords (Part 1 and Part 2) will be displayed below the form.
 
 ## Question 2 - Address Finding App
 
@@ -38,11 +39,26 @@ To use the Address Finding App, follow these steps:
 
 2. Open the `index.html` file in a web browser.
 
-3. Enter the commands in the provided text area.
+### Usage
+Once the application is open, you have two options to provide the commands:
 
-4. Click the "Run" button to execute the commands.
+#### Option 1: Write Commands
+1. Select the "Write Commands" option from the "Select Input Type" dropdown.
+2. Enter the commands in the textarea provided. Each command should be on a separate line.
+3. Click the "Run" button to execute the commands and determine the final address.
+4. The result will be displayed below the "Run" button.
 
-5. The final address will be displayed in the result section below.
+#### Option 2: Upload File
+1. Select the "Upload File" option from the "Select Input Type" dropdown.
+2. Click on the "Upload File" section to open the file selection dialog.
+3. Choose a text file (.txt) containing the commands you want to upload.
+4. Click the "Run" button to execute the commands and determine the final address.
+5. The result will be displayed below the "Run" button.
+###### Note: The file should contain one command per line, and each command should be a number.
+
+### Limitations
+The application assumes that the provided commands follow the specified format.
+Only text files (.txt) can be uploaded for command input.
 
 ### Example
 
