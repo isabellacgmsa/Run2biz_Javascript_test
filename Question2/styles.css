@@ -24,7 +24,8 @@ body {
     margin-bottom: 10px;
   }
   
-  textarea {
+  textarea,
+  input[type="file"] {
     width: 97%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -54,20 +55,42 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-weight: bold;
   }
   
   #result::before {
     content: "Result: ";
-    font-weight: bold;
+    font-weight: normal;
   }
   
-  #result span {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .error {
+  #error {
     color: #f44336;
     margin-top: 5px;
+  }
+  
+  #writeCommands,
+  #uploadFile {
+    display: none;
+  }
+  
+  #writeCommands.show {
+    display: block;
+  }
+  
+  #uploadFile.show {
+    display: block;
+  }
+  label[for="inputType"] {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #inputType {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
   }
   

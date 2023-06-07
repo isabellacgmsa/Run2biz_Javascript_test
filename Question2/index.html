@@ -4,17 +4,29 @@
   <title>Address Finding App</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
-  <div class="container">
+<body>  
+    <div class="container">
     <h1>Address Finding App</h1>
     <div>
+        <label for="inputType">Select Input Type:</label>
+        <select id="inputType">
+          <option value="write" selected>Write Commands</option>
+          <option value="upload">Upload File</option>
+        </select>
+      </div>
+    <div id="writeCommands">
       <label for="commandsInput">Enter Commands:</label>
       <textarea id="commandsInput" rows="5" cols="50"></textarea>
+    </div>
+    <div id="uploadFile" style="display: none;">
+      <label for="fileInput">Upload File:</label>
+      <input type="file" id="fileInput" accept=".txt">
     </div>
     <button id="runButton">Run</button>
     <div id="result"></div>
   </div>
 
   <script src="script.js"></script>
+
 </body>
 </html>
